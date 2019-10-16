@@ -7,7 +7,6 @@ const FriendsCard = props => {
       <p>Name: {props.friends.name}</p>
       <p>Age: {props.friends.age}</p>
       <p>Email: {props.friends.email}</p>
-      HELLO
     </div>
   );
 };

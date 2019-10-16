@@ -22,7 +22,7 @@ function App() {
         <Switch />
         <PrivateRoute path="/protected" component={FriendsContainer} />
         <Route path="/login" component={Login} />
-        <Route component={Login} />
+        {/* <Route component={Login} /> */}
 
         <Switch />
       </div>

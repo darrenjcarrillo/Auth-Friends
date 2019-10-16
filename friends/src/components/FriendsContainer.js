@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 
 import FriendsCard from "./FriendsCard";
 import { axiosWithAuth } from "../utils/axiosWIthAuth";
+import AddFriend from "./AddFriend";
 
 const FriendsContainer = () => {
   const [friends, setFriends] = useState([]);
@@ -16,6 +17,10 @@ const FriendsContainer = () => {
   return (
     <div>
       THIS IS THE CONTAINER
+      <div>
+        <p>ADD FRIEND</p>
+        <AddFriend />
+      </div>
       {friends.map((friend, index) => {
         return <FriendsCard key={index} friends={friend} />;
       })}
